@@ -1,4 +1,4 @@
-# rtmp-rtsp-stream-client-java X Banuba Face Filter
+# rtmp-rtsp-stream-client-java (pedroSG94) - Banuba Face Filter
 
 ## RTMP RTSP Library:
 https://github.com/pedroSG94/rtmp-rtsp-stream-client-java
