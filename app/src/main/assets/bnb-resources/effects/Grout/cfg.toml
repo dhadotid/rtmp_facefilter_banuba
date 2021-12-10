@@ -1,0 +1,77 @@
+adjust_zfar = 500
+draw_order = ["QuadMat", "eye", "!glfx_WARP_IMAGE", "groot", "teeth", "leaf"]
+# draw_order = ["blinn1"]
+# draw_order = ["lambert2"]
+# groot
+# eye
+# teeth
+# leaf
+[materials.teeth]
+vs = "blend_shape.vert"
+fs = "pbr.frag"
+blend = "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = false
+[materials.teeth.samplers]
+tex_diffuse="image.png"
+tex_normal="blinn2_Normal.png"
+tex_metallic="blinn2_Metallic.png"
+tex_roughness="blinn2_Roughness.png"
+tex_blend_shapes = "bs_groot_nomip_point.ktx"
+
+[materials.leaf]
+vs = "blend_shape.vert"
+fs = "pbr.frag"
+blend = "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = false
+[materials.leaf.samplers]
+tex_diffuse="image.png"
+tex_normal="blinn2_Normal.png"
+tex_metallic="blinn2_Metallic.png"
+tex_roughness="blinn2_Roughness.png"
+tex_blend_shapes = "bs_groot_nomip_point.ktx"
+
+[materials.eye]
+vs = "blend_shape.vert"
+fs = "pbr.frag"
+blend = "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = false
+[materials.eye.samplers]
+tex_diffuse="eye.png"
+tex_normal="blinn2_Normal.png"
+tex_metallic="blinn2_Metallic.png"
+tex_roughness="blinn2_Roughness.png"
+tex_blend_shapes = "bs_groot_nomip_point.ktx"
+
+[materials.groot]
+vs = "blend_shape.vert"
+fs = "pbr.frag"
+blend = "off"
+backfaces = false
+colorwrite = true
+zwrite = true
+shadow = false
+[materials.groot.samplers]
+tex_diffuse="image.png"
+tex_normal="blinn2_Normal.png"
+tex_metallic="blinn2_Metallic.png"
+tex_roughness="blinn2_Roughness.png"
+tex_blend_shapes = "bs_groot_nomip_point.ktx"
+
+[materials.QuadMat]
+vs = "button.vert"
+fs = "tex.frag"
+blend = "alpha"
+backfaces = true
+colorwrite = true
+zwrite = false
+shadow = false
+samplers = {meshTexture="BGGrout.png"}

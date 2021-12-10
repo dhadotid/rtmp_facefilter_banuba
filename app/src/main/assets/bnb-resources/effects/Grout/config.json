@@ -1,0 +1,56 @@
+{
+    "name": "ActionunitsGrout",
+    "frx": {
+        "type": "3d_anim",
+        "3d_anim": {
+            "type": "vfx"
+        }
+    },
+    "recordDuration": 10,
+    "recognizer": [
+        "action_units"
+    ],
+    "action_units": [
+        "BrowDownRight",
+        "BrowDownLeft",
+        "BrowInnerUp",
+        "BrowOuterUpRight",
+        "BrowOuterUpLeft",
+        "CheekPuff",
+        "CheekSquintRight",
+        "CheekSquintLeft",
+        "JawForward",
+        "JawRight",
+        "JawLeft",
+        "JawOpen",
+        "MouthClose",
+        "MouthFunnel",
+        "MouthPucker",
+        "MouthRight",
+        "MouthLeft",
+        "MouthSmileRight",
+        "MouthSmileLeft",
+        "MouthRollUpper",
+        "MouthRollLower",
+        "MouthShrugUpper",
+        "MouthShrugLower",
+        "MouthFrownRight",
+        "MouthFrownLeft",
+        "MouthUpperUpRight",
+        "MouthUpperUpLeft",
+        "MouthLowerDownRight",
+        "MouthLowerDownLeft",
+        "NoseSneerRight",
+        "NoseSneerLeft",
+        "MouthPressRight",
+        "MouthPressLeft",
+        "MouthStretchRight",
+        "MouthStretchLeft",
+        "EyeBlinkRight",
+        "EyeBlinkLeft",
+        "EyeWideRight",
+        "EyeWideLeft",
+        "EyeSquintRight",
+        "EyeSquintLeft"
+    ]
+}
