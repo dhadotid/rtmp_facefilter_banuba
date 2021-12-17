@@ -166,6 +166,10 @@ public abstract class Camera2Base implements GetAacData, GetVideoData, GetMicrop
 
     @Override
     public void onFrameRendered(@NonNull Data data, int width, int height) {
+      if (!isPrepared) {
+        isPrepared = true;
+        prepareVideo(width, height, 1200 * 1024);
+      }
       Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
       bitmap.copyPixelsFromBuffer(data.getData());
       data.close();
@@ -177,7 +181,7 @@ public abstract class Camera2Base implements GetAacData, GetVideoData, GetMicrop
       videoEncoder.inputYUVData(new Frame(nv21, 0, false, ImageFormat.NV21));
     }
   };
-
+boolean isPrepared = false;
   public void configureBanubaFilter(String filter) {
     if (banubaSdkManager == null) return;
     mCurrentEffect = banubaSdkManager.getEffectManager().loadAsync(

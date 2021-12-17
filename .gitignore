@@ -13,3 +13,5 @@
 .externalNativeBuild
 .cxx
 local.properties
+/libs
+/rtplibrary/src/main/java/com/pedro/rtplibrary/Constant.java

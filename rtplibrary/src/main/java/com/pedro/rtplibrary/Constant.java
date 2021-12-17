@@ -6,5 +6,5 @@ package com.pedro.rtplibrary;
  */
 
 public class Constant {
-    public static String BNB_KEY = "<Place your banuba token here>";
+    public static String BNB_KEY = "<Place your banuba token>";
 }

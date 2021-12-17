@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity(), SurfaceHolder.Callback,
 
     private fun startPublish(rtmpUrl: String){
         camera?.let {
-            if (it.prepareAudio() && it.prepareVideo(mWidth, mHeight, mBitrate)){
+            if (it.prepareAudio() /*&& it.prepareVideo(mWidth, mHeight, mBitrate)*/){
                 this.rtmpUrl = rtmpUrl
                 it.startStream(rtmpUrl)
                 _binding.btnStream.visibility = View.GONE
